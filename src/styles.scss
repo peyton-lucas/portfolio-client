@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:300,400,600,700,800);
+// Variables
+$background-color: #ffffff;
+$font-family: "Open Sans", sans-serif !important;
+$font-color: #2e373b;
+$header-weight: 300;
+$description-weight: 500;
+$primary-color: #EE4E54;
+$primary-color-hover: scale-color($primary-color, $lightness: 32%);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $font-family;
+  background: $background-color !important;
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brandLink {
+  color: inherit !important;
+}
+
+select.form-control,
+textarea.form-control,
+input.form-control {
+  font-size: 16px;
+}
+
+input[type=file] {
+  width: 100%;
+}
+
+.svg-inline--fa {
+  overflow: visible;
+  vertical-align: -0.125em;
+  display: inline-flex;
+  align-self: center;
+  margin-top: 6%;
+}
+
+// App
+.App {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: $font-color;
+  .navbar-brand {
+    font-weight: bold;
+    font-family: $font-family;
+    font-size: 25px;
+  }
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    font-family: $font-family;
+    font-size: 25px;
+  }
+}
+
+// Form
+@media all and (min-width: 480px) {
+  .Form {
+    padding: 60px 0;
+  }
+  .Form form {
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+  }
+}
+
+// Hero
+.Hero {
+  .lander {
+    background: $background-color;
+    color: $font-color;
+    padding: 8rem 0 6.9rem;
+    text-align: center;
+
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+    }
+
+    p {
+      color: #999;
+    }
+  }
+}
+
+.kpi {
+  background: $background-color;
+  .kpi-header {
+    font-size: 18px;
+    font-weight: $header-weight;
+    height: 12px;
+    display: inline-block;
+    color: $font-color;
+  }
+  .kpi-description {
+    color: $font-color;
+    letter-spacing: 0.3px;
+    font-weight: $description-weight;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .kpi-delta {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.header-line {
+  max-width: 30%;
+  border-bottom: 1px solid $font-color;
+  margin: 0 auto;
+}
+
+// Loader Button
+.LoaderButton {
+  background: #EE4E54;
+  .spinning.glyphicon {
+    margin-right: 7px;
+    top: 2px;
+    animation: spin 1s infinite linear;
+    background: white !important;
+  }
+}
