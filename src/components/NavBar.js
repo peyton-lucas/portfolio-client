@@ -12,7 +12,6 @@ export default function NavBar() {
         </Nav>
         <Nav>
           <NavLinks />
-          <Button variant="outline-success">Resume</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
