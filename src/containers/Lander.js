@@ -8,7 +8,7 @@ import "../styles.scss";
 
 export default function Lander() {
   return (
-    <div>
+    <div className="hero">
       <Hero />
       {/*<About />*/}
       {/*<Experience />*/}
