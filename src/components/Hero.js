@@ -13,7 +13,7 @@ export default function Hero() {
           {/*    Get to know me*/}
           {/*</Button>*/}
           <div className="section10 demo">
-            <Nav.Link><span></span></Nav.Link>
+            <Nav.Link><span></span>Find out more</Nav.Link>
           </div>
         </Row>
       </Container>
