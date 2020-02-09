@@ -7,12 +7,14 @@ export default function Hero() {
     <div className="lander">
       <Container>
         <Row className="cta">
-          <h1>Peyton <span className="outline">Lucas</span></h1>
-          <br />
-          {/*<Button className="button">*/}
-          {/*    Get to know me*/}
-          {/*</Button>*/}
-          <div className="section10 demo">
+          <div className="content">
+            <div className="content__container">
+              <h3>{'const me = '}</h3>
+              <h1 className="content__container__text">Peyton Lucas</h1>
+              <br />
+            </div>
+          </div>
+          <div id="#About" className="section10 demo">
             <Nav.Link><span></span>Find out more</Nav.Link>
           </div>
         </Row>
