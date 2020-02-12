@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Nav, Row, Tab } from "react-bootstrap";
-import Tabs from "./Tabs";
+import TabLinks from "./TabLinks";
+import TabPanes from "./TabPanes";
 
 export default function TabContainer() {
   return (
@@ -8,12 +9,12 @@ export default function TabContainer() {
       <Row>
         <Col sm={3}>
           <Nav variant="pills" className="flex-column">
-            <Tabs />
+            <TabLinks  />
           </Nav>
         </Col>
         <Col sm={9}>
           <Tab.Content>
-            <Tabs />
+            <TabPanes />
           </Tab.Content>
         </Col>
       </Row>

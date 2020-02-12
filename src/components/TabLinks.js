@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav, Tab } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
-export default function Tabs() {
+export default function TabLinks() {
   const jobs = [
     {
       company: "Freelance",
@@ -22,7 +22,8 @@ export default function Tabs() {
       company: "AAL-USA, Inc.",
       title: "Maintenance/HR Manager",
       description: "Something pithy about this position"
-    }];
+    }
+  ];
 
   const tabLinks = jobs.map(tab => {
     return (
@@ -32,14 +33,6 @@ export default function Tabs() {
     )
   });
 
-  const tabPanes = jobs.map(tabPane => {
-    return (
-      <Tab.Pane eventKey={jobs.title}>
-        {jobs.description}
-      </Tab.Pane>
-    )
-  });
-
-  return tabLinks, tabPanes;
+  return tabLinks;
 }
 
