@@ -14,7 +14,7 @@ export default function Hero() {
               <br />
             </div>
           </div>
-          <div id="#About" className="section10 demo">
+          <div href="#About" className="section10 demo">
             <Nav.Link><span></span>Find out more</Nav.Link>
           </div>
         </Row>

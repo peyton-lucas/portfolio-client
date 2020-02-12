@@ -1,5 +1,6 @@
 import React from "react";
-import {Container, Row} from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import TabsContainer from "./TabsContainer";
 
 export default function Experience() {
   return(
@@ -9,9 +10,7 @@ export default function Experience() {
           <h4>{'let my = me;'}</h4>
           <h2>{'{ my: experience }'}</h2>
           <br />
-          <p>
-
-          </p>
+          <TabsContainer />
         </Row>
       </Container>
     </div>
