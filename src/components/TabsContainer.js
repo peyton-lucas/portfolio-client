@@ -13,12 +13,7 @@ export default function TabContainer() {
         </Col>
         <Col sm={9}>
           <Tab.Content>
-            <Tab.Pane eventKey="first">
-              <Sonnet />
-            </Tab.Pane>
-            <Tab.Pane eventKey="second">
-              <Sonnet />
-            </Tab.Pane>
+            <Tabs />
           </Tab.Content>
         </Col>
       </Row>
