@@ -91,14 +91,14 @@ input[type=file] {
       font-size: 75px;
       text-transform: uppercase;
     }
-    p {
-      color: #999;
-    }
     .cta {
       display: block;
       align-items: center;
       justify-content: center;
       text-align: center;
+    }
+    .left-align {
+      text-align: left;
     }
   }
 }

@@ -6,7 +6,7 @@ import "../styles.scss";
 export default function Experience() {
   return(
     <div id="Experience">
-      <Container>
+      <Container className="lander">
         <Row className="cta">
           <h4>{'let my = me;'}</h4>
           <h2>{'{ my: experience }'}</h2>

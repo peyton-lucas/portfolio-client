@@ -20,14 +20,14 @@ const jobs = [
   {
     company: "AAL-USA, Inc.",
     title: "Maintenance/HR Manager",
-    description: "Something pithy about this position"
+    description: "Somethig pithy about this position"
   }
 ];
 
 export default function TabLinks() {
-  const tabs = jobs.map(tab => {
-    return (
-      <Tabs>
+  const tabs = jobs.map((tab) => {
+    return(
+      <Tabs defaultActiveKey="Full-Stack Developer" id="uncontrolled-tab-example">
         <Tab eventKey={tab.title} title={tab.title}>
           {tab.description}
         </Tab>

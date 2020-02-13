@@ -2,6 +2,11 @@ import React from "react";
 import { Button, Container, Nav, Row } from "react-bootstrap";
 import "../styles.scss";
 
+const hero = {
+  h1: "Peyton Lucas",
+  navText: "Find out more"
+};
+
 export default function Hero() {
   return(
     <div className="lander">
@@ -10,12 +15,12 @@ export default function Hero() {
           <div className="content">
             <div className="content__container">
               <h3>{'const me = '}</h3>
-              <h1 className="content__container__text">Peyton Lucas</h1>
+              <h1 className="content__container__text">{hero.h1}</h1>
               <br />
             </div>
           </div>
           <div href="#About" className="section10 demo">
-            <Nav.Link><span></span>Find out more</Nav.Link>
+            <Nav.Link><span></span>{hero.navText}</Nav.Link>
           </div>
         </Row>
       </Container>
