@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Figure, Row } from "react-bootstrap";
+import "../styles.scss";
 
 export default function About() {
   return(

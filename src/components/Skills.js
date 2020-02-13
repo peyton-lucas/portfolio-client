@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import "../styles.scss";
 
 export default function Skills() {
   return(
