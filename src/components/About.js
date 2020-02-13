@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Figure, Row } from "react-bootstrap";
+import { Col, Container, Figure, Row } from "react-bootstrap";
 import "../styles.scss";
 
 const about =
@@ -24,9 +24,24 @@ export default function About() {
         <Row className="cta">
           <h2>{'{ about: me }'}</h2>
           <br />
-          <p className="left-align">{about.p1}</p>
-          <p className="left-align">{about.p2}</p>
-          <p className="left-align">{about.p3}</p>
+          <Col sm={6}>
+            <p className="left-align">{about.p1}</p>
+            <p className="left-align">{about.p2}</p>
+            <p className="left-align">{about.p3}</p>
+          </Col>
+          <Col sm={6}>
+            <Figure>
+              <Figure.Image
+                width={171}
+                height={180}
+                alt="171x180"
+                src="holder.js/171x180"
+              />
+              <Figure.Caption>
+                Little ol' me
+              </Figure.Caption>
+            </Figure>
+          </Col>
         </Row>
       </Container>
     </div>

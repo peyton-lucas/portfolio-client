@@ -17,7 +17,8 @@ export default function Contact() {
       <Container className="lander">
         <Row className="cta">
           <h2>{'{ contact: me }'}</h2>
-          <p className="lander left-align">{contact.description}</p>
+          <br />
+          <p className="left-align">{contact.description}</p>
         </Row>
       </Container>
     </div>
