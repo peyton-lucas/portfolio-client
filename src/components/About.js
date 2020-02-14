@@ -24,12 +24,7 @@ export default function About() {
         <Row className="cta">
           <h2>{'{ about: me }'}</h2>
           <br />
-          <Col sm={6}>
-            <p className="left-align">{about.p1}</p>
-            <p className="left-align">{about.p2}</p>
-            <p className="left-align">{about.p3}</p>
-          </Col>
-          <Col sm={6}>
+          <Col>
             <Figure>
               <Figure.Image
                 width={171}
@@ -41,6 +36,11 @@ export default function About() {
                 Little ol' me
               </Figure.Caption>
             </Figure>
+          </Col>
+          <Col>
+            <p className="left-align">{about.p1}</p>
+            <p className="left-align">{about.p2}</p>
+            <p className="left-align">{about.p3}</p>
           </Col>
         </Row>
       </Container>
