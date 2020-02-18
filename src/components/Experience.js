@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import TabLinks from "./TabLinks";
+import TabsContainer from "./TabsContainer";
 import "../styles.scss";
 
 export default function Experience() {
@@ -11,7 +12,8 @@ export default function Experience() {
           <h4>{'let my = me;'}</h4>
           <h2>{'{ my: experience }'}</h2>
           <br />
-          <TabLinks />
+          {/*<TabLinks />*/}
+          <TabsContainer />
         </Row>
       </Container>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Tabs } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 const jobs = [
   {
@@ -20,18 +20,21 @@ const jobs = [
   {
     company: "AAL-USA, Inc.",
     title: "Maintenance/HR Manager",
-    description: "Somethig pithy about this position"
+    description: "Something pithy about this position"
   }
 ];
 
 export default function TabLinks() {
-  const tabs = jobs.map((tab) => {
+  const links = jobs.map((link) => {
     return(
-      <Tab eventKey={tab.title} title={tab.title}>
-        {tab.description}
-      </Tab>
+      <Nav.Item>
+        <Nav.Link eventKey={link.title}>{link.title}</Nav.Link>
+      </Nav.Item>
     )
   });
-  return <Tabs defaultActiveKey="Full-Stack Developer" id="uncontrolled-tab-example">{tabs}</Tabs>;
+  return <Nav
+    id="left-tabs-example"
+    defaultActiveKey="Full-Stack Developer"
+    variant="pills">{links}</Nav>;
 }
 

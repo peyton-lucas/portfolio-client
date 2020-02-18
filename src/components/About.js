@@ -24,24 +24,20 @@ export default function About() {
         <Row className="cta">
           <h2>{'{ about: me }'}</h2>
           <br />
-          <Col>
-            <Figure>
-              <Figure.Image
-                width={171}
-                height={180}
-                alt="171x180"
-                src="holder.js/171x180"
-              />
-              <Figure.Caption>
-                Little ol' me
-              </Figure.Caption>
-            </Figure>
-          </Col>
-          <Col>
-            <p className="left-align">{about.p1}</p>
-            <p className="left-align">{about.p2}</p>
-            <p className="left-align">{about.p3}</p>
-          </Col>
+          <Figure>
+            <Figure.Image
+              width={171}
+              height={180}
+              alt="171x180"
+              src="holder.js/171x180"
+            />
+            <Figure.Caption>
+              Little ol' me
+            </Figure.Caption>
+          </Figure>
+          <p className="left-align">{about.p1}</p>
+          <p className="left-align">{about.p2}</p>
+          <p className="left-align">{about.p3}</p>
         </Row>
       </Container>
     </div>

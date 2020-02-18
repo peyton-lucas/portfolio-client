@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const skillSets = [
   {
@@ -25,9 +25,13 @@ export default function SkillSets() {
     return(
       <Col>
         <h4>{skill.title}</h4>
-        <p>{skill.description + " "}</p>
+        <ul>
+          {skill.description.map((tool) => {
+            return(<li>{tool}</li>);
+          })}
+        </ul>
       </Col>
     );
   });
-  return mappedSkills;
+  return <Row>{mappedSkills}</Row>;
 }
