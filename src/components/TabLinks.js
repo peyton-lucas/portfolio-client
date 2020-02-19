@@ -28,13 +28,12 @@ export default function TabLinks() {
   const links = jobs.map((link) => {
     return(
       <Nav.Item>
-        <Nav.Link eventKey={link.title}>{link.title}</Nav.Link>
+        <Nav.Link eventKey={link.title}>{"{ "}{link.title}{" }"}</Nav.Link>
       </Nav.Item>
     )
   });
   return <Nav
     id="left-tabs-example"
-    defaultActiveKey="Full-Stack Developer"
-    variant="pills">{links}</Nav>;
+    defaultActiveKey="Full-Stack Developer">{links}</Nav>;
 }
 

@@ -32,6 +32,7 @@ export default function TabPanes() {
   const panes = jobs.map((pane) => {
     return(
       <Tab.Pane eventKey={pane.title}>
+        <h5>{pane.company}</h5>
         {pane.description}
       </Tab.Pane>
     )

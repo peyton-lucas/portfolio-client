@@ -2,8 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata&display=swap);
 // Variables
 $background-color: white;
-$header-font: 'Inconsolata', monospace;
-$body-font: "Open Sans", sans-serif;
+$font: 'Inconsolata', monospace;
 $font-color: black;
 $header-weight: 300;
 $description-weight: 500;
@@ -12,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: $body-font;
+  font-family: $font;
   //background: $background-color !important;
   color: $font-color;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +19,21 @@ body {
 }
 
 h2 {
-  font-family: $header-font;
+  font-family: $font;
+}
+
+ul {
+  list-style-type: none;
+  //text-align: left;
+  padding: 0px 20px 0px 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
 }
 
 select.form-control,
@@ -48,13 +61,13 @@ input[type=file] {
   color: $font-color;
   .navbar-brand {
     font-weight: bold;
-    font-family: $header-font;
+    font-family: $font;
     font-size: 25px;
   }
   .navbar {
     display: block;
     justify-content: space-between;
-    font-family: $header-font;
+    font-family: $font;
   }
   .nav-link {
     display: inline-flex;
@@ -86,7 +99,7 @@ input[type=file] {
     padding: 8rem 0 2rem;
     text-align: center;
     h1 {
-      font-family: $header-font;
+      font-family: $font;
       font-weight: 800;
       font-size: 75px;
       text-transform: uppercase;
@@ -96,6 +109,7 @@ input[type=file] {
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 0px 50px 0px 50px;
     }
     .left-align {
       text-align: left;

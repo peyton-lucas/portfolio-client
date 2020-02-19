@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Nav } from "react-bootstrap";
 import "../styles.scss";
 
 const contact =
@@ -18,6 +18,7 @@ export default function Contact() {
         <Row className="cta">
           <h2>{'{ contact: me }'}</h2>
           <br />
+          <Nav.Link href={"mailto:" + "studistics@gmail.com"}>Click here to drop me a line!</Nav.Link>
           <p className="left-align">{contact.description}</p>
         </Row>
       </Container>
