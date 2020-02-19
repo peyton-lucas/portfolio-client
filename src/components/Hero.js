@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Nav, Row } from "react-bootstrap";
+import { Container, Nav, Row } from "react-bootstrap";
 import "../styles.scss";
 
 const hero = {

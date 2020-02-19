@@ -18,6 +18,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
 h2 {
   font-family: $font;
 }
@@ -74,6 +79,15 @@ input[type=file] {
     padding: 1rem 1rem;
     font-size: 1.5rem;
     color: $font-color !important;
+    display: inline-block;
+    color: $font-color;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .5;
+    }
   }
 }
 
@@ -122,7 +136,7 @@ input[type=file] {
   bottom: 20px;
   display: inline-block;
   transform: translate(0, -50%);
-  color: black;
+  color: $font-color;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;

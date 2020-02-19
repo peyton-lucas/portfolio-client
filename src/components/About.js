@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Figure, Row } from "react-bootstrap";
+import { Container, Figure, Row } from "react-bootstrap";
 import "../styles.scss";
 
 const about =
@@ -26,10 +26,10 @@ export default function About() {
           <br />
           <Figure>
             <Figure.Image
-              width={171}
-              height={180}
-              alt="171x180"
-              src="holder.js/171x180"
+              width={1024}
+              height={683}
+              // alt="171x180"
+              src="./me2.jpg"
             />
             <Figure.Caption>
               Little ol' me
