@@ -1,9 +1,7 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "../styles.scss";
-
-{/*<Link to="section1">*/}
 
 export default function NavBar() {
   const links = ["About", "Experience", "Skills", "Contact"];
