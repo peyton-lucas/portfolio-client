@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Row } from "react-bootstrap";
+import { Link } from "react-scroll";
 import "../styles.scss";
 
 const hero = {
@@ -20,7 +21,19 @@ export default function Hero() {
             </div>
           </div>
           <div className="section10 demo">
-            <Nav.Link href="#About"><span></span>{hero.navText}</Nav.Link>
+            <Nav.Link>
+              <span></span>
+              <Link
+                activeClass="active"
+                to={"About"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {hero.navText}
+              </Link>
+            </Nav.Link>
           </div>
         </Row>
       </Container>
