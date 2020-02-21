@@ -1,13 +1,25 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles.scss";
+
+{/*<Link to="section1">*/}
 
 export default function NavBar() {
   const links = ["About", "Experience", "Skills", "Contact"];
   const navLinks = links.map(link => {
     return (
-      <Nav.Link href={"#" + link}>
-        { link }
+      <Nav.Link>
+        <Link
+          activeClass="active"
+          to={link}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          { link }
+        </Link>
       </Nav.Link>
     )
   });
