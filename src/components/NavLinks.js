@@ -6,7 +6,7 @@ import "../styles.scss";
 export default function NavBar() {
   const links = ["About", "Experience", "Skills", "Contact"];
   const navLinks = links.map(link => {
-    return (
+    return(
       <Nav.Link>
         <Link
           activeClass="active"

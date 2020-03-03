@@ -5,7 +5,7 @@ import TabPanes from "./TabPanes";
 
 export default function TabsContainer() {
   return(
-    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+    <Tab.Container id="left-tabs-example" defaultActiveKey="Full-Stack Developer">
       <Row>
         <Col sm={2}></Col>
         <Col sm={3}>

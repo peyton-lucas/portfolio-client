@@ -32,8 +32,6 @@ export default function TabLinks() {
       </Nav.Item>
     )
   });
-  return <Nav
-    id="left-tabs-example"
-    defaultActiveKey="Full-Stack Developer">{links}</Nav>;
+  return <Nav>{links}</Nav>;
 }
 
