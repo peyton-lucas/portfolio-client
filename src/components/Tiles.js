@@ -43,7 +43,7 @@ export default function Tiles() {
       <Row className="row-padding">
         <Col>
           {!tile.link ? (
-            <Image className="center" src="holder.js/450x250" rounded />
+            <Image className="center" src="" rounded />
           ) : (
             <Nav.Link href={tile.link}>
               <Image
