@@ -4,23 +4,19 @@ import { Nav } from "react-bootstrap";
 const jobs = [
   {
     company: "Freelance",
-    title: "Full-Stack Developer",
-    description: "Something pithy about this position"
+    title: "Full-Stack Developer"
   },
   {
     company: "Freelance",
-    title: "Front-End Developer",
-    description: "Something different"
+    title: "Front-End Developer"
   },
   {
     company: "Pellet Grill Pros",
-    title: "Web Developer",
-    description: "Something pithy about this position"
+    title: "Web Developer"
   },
   {
     company: "AAL-USA, Inc.",
-    title: "Maintenance/HR Manager",
-    description: "Something pithy about this position"
+    title: "Maintenance/HR Manager"
   }
 ];
 

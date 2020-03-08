@@ -1,17 +1,17 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import TabsContainer from "./TabsContainer";
+import Tiles from "./Tiles";
 import "../styles.scss";
 
 export default function Experience() {
   return(
-    <div id="Experience">
+    <div>
       <Container className="lander">
         <Row className="cta">
-          <h4>{'let my = me;'}</h4>
+          <h4 id="Experience">{'let my = me;'}</h4>
           <h2>{'{ my: experience }'}</h2>
           <br />
-          <TabsContainer />
+          <Tiles />
         </Row>
       </Container>
     </div>

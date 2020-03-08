@@ -19,10 +19,10 @@ const about =
 
 export default function About() {
   return(
-    <div id="About">
+    <div>
       <Container className="lander">
         <Row className="cta">
-          <h2>{'{ about: me }'}</h2>
+          <h2 id="About">{'{ about: me }'}</h2>
           <br />
           <Figure>
             <Figure.Image

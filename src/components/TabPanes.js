@@ -61,9 +61,8 @@ export default function TabPanes() {
     return(
       <Tab.Pane eventKey={pane.title}>
         <h5>{pane.company}</h5>
-        {pane.description}
         <p>
-
+          {pane.description}
         </p>
       </Tab.Pane>
     )

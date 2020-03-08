@@ -5,10 +5,10 @@ import "../styles.scss";
 
 export default function Skills() {
   return(
-    <div id="Skills">
+    <div>
       <Container className="lander">
         <Row className="cta">
-          <h2>{'{ my: skills }'}</h2>
+          <h2 id="Skills">{'{ my: skills }'}</h2>
           <br />
           <SkillSets />
         </Row>

@@ -59,6 +59,20 @@ input[type=file] {
   margin-top: 1.5%;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-60%);
+}
+
+.row-padding {
+  padding-bottom: 25px;
+}
+
 // App
 .App {
   padding-top: 5px;
@@ -93,15 +107,8 @@ input[type=file] {
 
 // Form
 @media all and (min-width: 480px) {
-  .Form {
-    padding: 60px 0;
-  }
-  .Form form {
-    margin: 0 auto;
-    max-width: 380px;
-    padding: 15px 35px 45px;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+  .left-align {
+
   }
 }
 
