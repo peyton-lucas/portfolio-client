@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Image, Nav, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Nav, Row } from "react-bootstrap";
 
 const jobs = [
   {
@@ -37,41 +37,45 @@ const jobs = [
   }
 ];
 
+// Holder photo dimensions
+// holder.js/450x250
+
 export default function Tiles() {
   const tiles = jobs.map((tile) => {
     return(
-      <Row className="row-padding">
-        <Col>
-          {!tile.link ? (
-            <Image className="center" src="" rounded />
-          ) : (
-            <Nav.Link href={tile.link}>
+      <Container>
+        <Row className="row-padding">
+          <Col lg={6}>
+            {!tile.link ? (
               <Image
-                className="center w-100"
-                src={tile.picture}
-                width={450}
-                height={250}
+                src=""
                 rounded />
-            </Nav.Link>
+            ) : (
+              <Nav.Link href={tile.link}>
+                <Image
+                  src={tile.picture}
+                  rounded />
+              </Nav.Link>
+            )}
+          </Col>
+          {!tile.link ? (
+            <Col lg={6}>
+              <h4>{"{ "}{tile.title}{": "}{tile.company}{" }"}</h4>
+              <p>
+                {tile.description}
+              </p>
+            </Col>
+          ) : (
+            <Col lg={6}>
+              <h4>{"{ "}{tile.title}{": "}{tile.company}{" }"}</h4>
+              <p>
+                {tile.description}
+              </p>
+              <Button variant="dark" href={tile.link}>Read more {">"}</Button>
+            </Col>
           )}
-        </Col>
-        {!tile.link ? (
-          <Col>
-            <h4>{"{ "}{tile.title}{": "}{tile.company}{" }"}</h4>
-            <p>
-              {tile.description}
-            </p>
-          </Col>
-        ) : (
-          <Col>
-            <h4>{"{ "}{tile.title}{": "}{tile.company}{" }"}</h4>
-            <p>
-              {tile.description}
-            </p>
-            <Button variant="dark" href={tile.link}>Read more {">"}</Button>
-          </Col>
-        )}
-      </Row>
+        </Row>
+      </Container>
     )
   });
   return(

@@ -4,11 +4,11 @@ import { Col, Row } from "react-bootstrap";
 const skillSets = [
   {
     title: "Languages",
-    description: ["JavaScript", "Python", "HTML", "CSS", "SQL/NoSQL"]
+    description: ["JavaScript", "Python", "HTML", "CSS/SCSS", "SQL/NoSQL"]
   },
   {
     title: "Libraries & Frameworks",
-    description: ["ReactJS", "ReduxJS", "NodeJS", "React Router", "SASS", "Bootstrap", "NumPy", "Pandas", "Flask"]
+    description: ["ReactJS", "ReduxJS", "NodeJS", "React Router", "Bootstrap"]
   },
   {
     title: "AWS",
@@ -16,7 +16,7 @@ const skillSets = [
   },
   {
     title: "Tools",
-    description: ["Git", "Linux", "Apache Server", "Bash", "Jupyter NoteBook", "Serverless"]
+    description: ["Git", "Linux", "Serverless"]
   }
 ];
 
