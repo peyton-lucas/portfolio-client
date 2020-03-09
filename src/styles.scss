@@ -106,8 +106,8 @@ input[type=file] {
 }
 
 // Form
-@media all and (min-width: 991px) {
-  .expereince-center {
+@media all and (max-width: 991px) {
+  .experience-center {
     text-align: center;
     padding-bottom: 15px;
   }
@@ -149,7 +149,6 @@ input[type=file] {
   text-decoration: none;
   transition: opacity .3s;
   margin-top: 20%;
-
 
   &:hover {
     opacity: .5;
