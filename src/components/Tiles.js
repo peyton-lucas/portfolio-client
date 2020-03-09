@@ -45,7 +45,7 @@ export default function Tiles() {
     return(
       <Container>
         <Row className="row-padding">
-          <Col lg={6}>
+          <Col className="expereince-center" lg={6}>
             {!tile.link ? (
               <Image
                 src=""
