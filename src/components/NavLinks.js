@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import "../styles.scss";
 
 export default function NavBar() {
-  const links = ["About", "Experience", "Skills", "Contact"];
+  const links = ["About", "Projects", "Skills", "Contact"];
   const navLinks = links.map(link => {
     return(
       <Nav.Link>

@@ -3,13 +3,12 @@ import { Container, Row } from "react-bootstrap";
 import Tiles from "./Tiles";
 import "../styles.scss";
 
-export default function Experience() {
+export default function Projects() {
   return(
     <div>
       <Container className="lander">
         <Row className="cta">
-          <h4 id="Experience">{'let my = me;'}</h4>
-          <h2>{'{ my: experience }'}</h2>
+          <h2 id="Projects">{'{ my: projects }'}</h2>
           <br />
           <Tiles />
         </Row>
