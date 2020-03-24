@@ -29,10 +29,10 @@ export default function Journey() {
           <h2 id="Journey">{'{ my: journey }'}</h2>
           <br />
           <Row>
-            <Col>
+            <Col lg={6}>
               { myJourney }
             </Col>
-            <Col>
+            <Col lg={6}>
               <Figure>
                 <Figure.Image
                   src="./Astan.jpeg"
