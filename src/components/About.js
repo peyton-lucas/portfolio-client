@@ -28,6 +28,7 @@ export default function About() {
               width={1024}
               height={683}
               src="./me2.jpg"
+              rounded
             />
             <Figure.Caption>
               Little ol' me

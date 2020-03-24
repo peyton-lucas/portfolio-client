@@ -59,7 +59,7 @@ export default function Tiles() {
                 src=""
                 rounded />
             ) : (
-              <Nav.Link href={tile.link}>
+              <Nav.Link href={tile.link} className="margin-top-25">
                 <Image
                   src={tile.picture}
                   rounded />

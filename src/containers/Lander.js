@@ -12,7 +12,7 @@ export default function Lander() {
     <div className="hero">
       <Hero />
       <About />
-      {/*<Journey />*/}
+      <Journey />
       <Projects />
       <Skills />
       <Contact />
