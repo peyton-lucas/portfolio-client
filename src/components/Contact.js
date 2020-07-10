@@ -18,7 +18,7 @@ export default function Contact() {
         <Row className="cta">
           <h2 id="Contact">{'{ contact: me }'}</h2>
           <br />
-          <Nav.Link href={"mailto:" + "studistics@gmail.com"}>Click here to drop me a line!</Nav.Link>
+          <Nav.Link href={"mailto:" + "pnlucas86@gmail.com"}>Click here to drop me a line!</Nav.Link>
           <p className="left-align">{contact.description}</p>
         </Row>
       </Container>
